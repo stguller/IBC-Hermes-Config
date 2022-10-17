@@ -1,0 +1,26 @@
+[[chains]]
+id = 'osmosis-1'
+rpc_addr = 'http://127.0.0.1:46657'
+grpc_addr = 'http://127.0.0.1:9096'
+websocket_addr = 'ws://127.0.0.1:9196/websocket'
+rpc_timeout = '10s'
+account_prefix = 'osmo'
+key_name = 'osmosis'
+address_type = { derivation = 'cosmos' }
+store_prefix = 'ibc'
+default_gas = 5000000
+max_gas = 15000000
+gas_price = { price = 0.0026, denom = 'uosmo' }
+gas_multiplier = 2
+max_msg_num = 20
+max_tx_size = 209715
+clock_drift = '20s'
+max_block_time = '10s'
+trusting_period = '10days'
+memo_prefix = 'wabut.club'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
+ ['transfer', 'channel-355']
+]
