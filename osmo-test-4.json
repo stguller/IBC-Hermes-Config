@@ -18,5 +18,5 @@ memo_prefix = '<Service provider> IBC service'
 [chains.packet_filter]
 policy = 'allow'
 list = [
-  ['transfer', 'channel-75']
+  ['transfer', 'channel-<Channel Number>']
 ]
