@@ -14,9 +14,9 @@ gas_adjustment = 0.1
 clock_drift = '15s'
 trusting_period = '14days'
 trust_threshold = { numerator = '1', denominator = '3' }
-memo_prefix = 'wabut.club IBC service'
+memo_prefix = '<Service provider> IBC service'
 [chains.packet_filter]
 policy = 'allow'
 list = [
-  ['transfer', 'channel-42']
-  ]
+  ['transfer', 'channel-<Channel Number>']
+]
